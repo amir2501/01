@@ -1,0 +1,96 @@
+body {
+  background-color: hsl(30, 54%, 90%);
+}
+p,
+li {
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: hsl(30, 10%, 34%);
+}
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 20px;
+}
+hr {
+  color: hsl(30, 18%, 87%);
+  width: 100%;
+  size: 10px;
+}
+/* purpish background */
+.purple-background {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 10px;
+  padding-left: 30px;
+}
+.purple-background > h2 {
+  color: hsl(330, 66%, 31%);
+}
+/* gap between list items */
+.paddingForLi > li {
+  padding: 5px;
+}
+/* changing color of points */
+li::marker,
+.brown-text {
+  color: #946861;
+  font-weight: 700;
+}
+/* container */
+.container {
+  max-width: 650px;
+  background-color: hsl(0, 0%, 100%);
+  display: grid;
+  margin: 100px auto;
+  padding: 40px;
+  border-radius: 20px;
+}
+.container > * {
+  max-width: 100%;
+}
+
+.container > img {
+  border-radius: 20px;
+}
+/* bold text */
+.bold {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+/* grid in the end  */
+.grid {
+  margin-left: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.grid > .brown-text {
+  margin: auto 0px;
+}
+
+@media (max-width: 1000px) {
+  body {
+    margin: 0px;
+  }
+  .container {
+    padding: 0px;
+    margin: 0px;
+  }
+  .container2 {
+    padding: 10px 40px;
+  }
+  .container,
+  .container > img {
+    border-radius: 0px;
+  }
+  .container > img {
+    width: 100%;
+  }
+}
