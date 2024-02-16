@@ -2,7 +2,8 @@ body {
   background-color: hsl(30, 54%, 90%);
 }
 p,
-li {
+li,
+.grid {
   font-size: 16px;
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
@@ -16,6 +17,11 @@ h2 {
   font-weight: 400;
   font-style: normal;
   padding-top: 20px;
+  font-size: 2em;
+}
+
+h1 {
+  font-size: 2.5rem;
 }
 hr {
   color: hsl(30, 18%, 87%);
@@ -26,20 +32,42 @@ hr {
 .purple-background {
   background-color: hsl(330, 100%, 98%);
   border-radius: 10px;
-  padding-left: 30px;
+  padding-left: 1.3rem;
+  padding-bottom: 1rem;
 }
 .purple-background > h2 {
   color: hsl(330, 66%, 31%);
+  font-size: 1.1rem;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.purple-background > ul {
+  margin-left: 1rem;
+  padding: 0px;
+  padding-left: 0.1rem;
+}
+.purple-background > ul > li {
+  padding-left: 1.5rem;
 }
 /* gap between list items */
 .paddingForLi > li {
   padding: 5px;
+  padding-left: 1.2rem;
+  padding-right: 0px;
 }
 /* changing color of points */
 li::marker,
 .brown-text {
-  color: #946861;
-  font-weight: 700;
+  color: #9a4437;
+  font-weight: 500;
+}
+
+ul,
+ol {
+  padding-left: 0.5rem;
+  margin: 1rem;
 }
 /* container */
 .container {
@@ -49,13 +77,14 @@ li::marker,
   margin: 100px auto;
   padding: 40px;
   border-radius: 20px;
+  margin-top: 130px;
 }
 .container > * {
   max-width: 100%;
 }
-
+/* img */
 .container > img {
-  border-radius: 20px;
+  border-radius: 10px;
 }
 /* bold text */
 .bold {
@@ -64,6 +93,7 @@ li::marker,
   font-weight: 700;
   font-style: normal;
 }
+
 /* grid in the end  */
 .grid {
   margin-left: 30px;
@@ -71,11 +101,11 @@ li::marker,
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
 }
-.grid > .brown-text {
-  margin: auto 0px;
+.grid > * {
+  margin: 0px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 480px) {
   body {
     margin: 0px;
   }
@@ -85,6 +115,7 @@ li::marker,
   }
   .container2 {
     padding: 10px 40px;
+    margin-bottom: 2rem;
   }
   .container,
   .container > img {
@@ -92,5 +123,9 @@ li::marker,
   }
   .container > img {
     width: 100%;
+  }
+  h1,
+  h2 {
+    font-size: 2rem;
   }
 }
